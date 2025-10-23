@@ -44,6 +44,15 @@ python scripts/convert_to_tensorrt.py --fp8
 
 ### 5. 추론 실행
 
+**방법 1: Web UI (추천! 🎨)**
+```bash
+# Gradio 웹 인터페이스 실행
+python webui.py
+
+# 브라우저에서 http://localhost:7860 접속
+```
+
+**방법 2: 커맨드라인**
 ```bash
 # 기본 추론
 python inference.py \

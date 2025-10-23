@@ -66,7 +66,25 @@ python scripts/convert_to_tensorrt.py --fp8
 
 ## 💻 사용 방법
 
-### 기본 추론
+### 1. Web UI (가장 간단! 🎨)
+
+```bash
+# Gradio 기반 웹 인터페이스 실행
+python webui.py
+
+# 특정 포트 지정
+python webui.py --port 8080
+
+# 외부 접속 허용
+python webui.py --host 0.0.0.0 --port 7860
+
+# Public 공유 링크 생성
+python webui.py --share
+```
+
+브라우저에서 `http://localhost:7860` 접속!
+
+### 2. 기본 추론 (Python API)
 
 ```python
 from litevlm import LiteVLM
@@ -87,13 +105,13 @@ result = vlm.chat(
 print(result)
 ```
 
-### 커맨드라인 인터페이스
+### 3. 커맨드라인 인터페이스
 
 ```bash
 python inference.py --image example.jpg --prompt "What is in this image?"
 ```
 
-### 벤치마크
+### 4. 벤치마크
 
 ```bash
 # 추론 속도 및 메모리 사용량 측정
