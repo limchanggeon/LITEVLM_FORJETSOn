@@ -4,10 +4,29 @@
 
 ### 1. 저장소 클론
 
+**방법 1: Git Clone (권장)**
 ```bash
-git clone https://github.com/yourusername/liteVLM_injetson.git
-cd liteVLM_injetson
+git clone https://github.com/limchanggeon/LITEVLM_FORJETSOn.git
+cd LITEVLM_FORJETSOn
 ```
+
+**방법 2: ZIP 다운로드 + Git 연결**
+```bash
+# 다운로드 및 압축 해제
+wget https://github.com/limchanggeon/LITEVLM_FORJETSOn/archive/refs/heads/main.zip
+unzip main.zip
+mv LITEVLM_FORJETSOn-main liteVLM_injetson
+cd liteVLM_injetson
+
+# Git 저장소로 변환 (이후 git pull 가능)
+git init
+git remote add origin https://github.com/limchanggeon/LITEVLM_FORJETSOn.git
+git fetch origin
+git reset --hard origin/main
+git branch --set-upstream-to=origin/main main
+```
+
+💡 **더 많은 설치 방법**: [INSTALL_GUIDE.md](INSTALL_GUIDE.md)
 
 ### 2. 초기 설정
 

@@ -28,9 +28,17 @@ NVIDIA Jetson Orin에서 실행 가능한 경량 Vision-Language Model (VLM) 추
 ### 1. 저장소 클론 (Jetson에서 실행)
 
 ```bash
-git clone https://github.com/yourusername/liteVLM_injetson.git
-cd liteVLM_injetson
+# Git Clone (권장)
+git clone https://github.com/limchanggeon/LITEVLM_FORJETSOn.git
+cd LITEVLM_FORJETSOn
+
+# 또는 ZIP 다운로드
+wget https://github.com/limchanggeon/LITEVLM_FORJETSOn/archive/refs/heads/main.zip
+unzip main.zip
+cd LITEVLM_FORJETSOn-main
 ```
+
+💡 **자세한 설치 가이드**: [INSTALL_GUIDE.md](INSTALL_GUIDE.md) 참고
 
 ### 2. Conda 환경 설정
 
